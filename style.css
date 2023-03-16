@@ -47,7 +47,7 @@ body {
     color: var(--white);
 }
 .title-text h1 {
-    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    font-size: clamp(1.6rem, 5vw, 3rem);
     margin: 0 0 1.6rem;
 }
 
@@ -142,4 +142,26 @@ form .field {
 }
 footer {
     text-align: center;
+}
+
+/* Desktop View */
+@media screen and (min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 2rem;
+        padding: 2rem 5rem;
+    }
+    .title-text {
+        text-align: start;
+    }
+    .form p.trial {
+        max-width: 400px;
+        width: 100%;
+    }
+    .form form {
+        max-width: 400px;
+        width: 100%;
+    }
 }
